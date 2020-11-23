@@ -1,0 +1,9 @@
+<form action="/polls/add" method="post">
+    {% csrf_token %}
+    {% block content %} 
+    {% endblock %} 
+    {% comment %} {{ form }} {% endcomment %}
+    <label for="your_name">Your name: </label>
+    <input id="your_name" type="text" name="your_name" value="{{ current_name }}">
+    <input type="submit" value="OK">
+</form>

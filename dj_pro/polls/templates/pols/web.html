@@ -1,0 +1,16 @@
+{% extends 'pols/base.html' %}
+{% comment %} <p>{{tasks}}</p> {% endcomment %}
+{% block content %}
+     <div class="date">
+                {{ tasks }}
+            </div>
+    {% comment %} {% for task in tasks %}
+        <div class="task">
+            <div class="date">
+                {{ task }}
+            </div>
+            <h2><a href="">{{ task}}</a></h2>
+            <p>{{ task}}</p>
+        </div>
+    {% endfor %} {% endcomment %}
+{% endblock %}
